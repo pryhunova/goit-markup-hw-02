@@ -5,6 +5,8 @@
 /* акцент #2196F3 */
 /* цвет шапки #FFFFFF */
 /* цвет герой #FFFFFF */
+/* цвет акцента портфолио  rgba(33, 150, 243, 0.9) */
+/* цвет шрифта кнопок #FFFFFF */
 
 :root {
   --primary-title-color: #212121;
@@ -14,6 +16,8 @@
   --section-background-color: #f5f4fa;
   --header-background-color: #ffffff;
   --hero-white-color: #ffffff;
+  --portfolio-background: rgba(33, 150, 243, 0.9);
+  --button-white-text: #ffffff;
 }
 
 body {
@@ -207,6 +211,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--button-white-text);
 }
 .copyright {
   font-style: normal;
@@ -215,4 +220,57 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
+}
+
+/*скрытый заголовок портфолио */
+.portfolio-title-hidden {
+  display: none;
+}
+.text-aside {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+.portfolio .portfolio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+  background-color: var(--section-background-color);
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--button-white-text);
+  background-color: var(--accent-color);
+}
+.portfolio-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--primary-title-color);
+}
+.portfolio-aside {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.portfolio-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--button-white-text);
+}
+.portfolio .current {
+  color: var(--button-white-text);
+  background-color: var(--accent-color);
 }
